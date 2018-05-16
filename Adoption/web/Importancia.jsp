@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <title>Adoption</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+    </head>
+	<body>
+
+		<!-- Header -->
+        <header id="header">
+            <h1><a href="Home.jsp">Adoption</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="Home.jsp">Início</a></li> 
+                    <li><a href="Sobre.jsp">Sobre nós</a></li>
+                    <li><a href="Login.jsp" class="button special">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+						<h2>Importância</h2>
+						<p>Aqui iremos falar da importância dos animais!</p>
+					</header>
+                                    <p> Ninguém tem dúvidas que os animais domésticos são grandes companheiros e fazem muito bem a todos (tanto crianças como adultos). No caso dos adultos, principalmente aqueles que vivem sozinhos, os animais são como um membro da família, compensando as necessidades de afeto e atenção que só os animais nos sabem dar. Para as crianças, além de companheiros leais a todas as horas, os animais também servem para ajudar a criança a aprender as coisas do dia-a-dia, pois mostram de forma acelerada as principais fases da vida (nascer, crescer, adoecer, sofrer acidentes, cuidar de si, morrer). Como estas fases são mais aceleradas nos animais a criança acaba por conhecê-las através deles. Além disso, os animais ajudam a criança a desenvolver o sentido da responsabilidade, visto que precisam de constantes cuidados. Num estudo feito por Robert Bierer constatou-se que as crianças, principalmente com idade entre os 10 e os 12 anos, que tinham animais possuíam maior empatia e autoestima. Os animais de estimação também ajudam a diminuir os estados de ansiedade, tédio e medo e desenvolvem uma melhor capacidade de integração e uma melhor concentração na escola. Um fator importante na escolha dum animal de estimação é o fator da pessoa que o adquire ter alergias (como asma, bronquite, etc.). Se assim for, a pessoa deve optar por uma animal que não desencadeie energias, como por exemplo, um aquário com peixes ou uma tartaruga.
+                                    <p> Fonte: http://www.vidapetnews.com.br/portal/a-importancia-dos-animais-domesticos/ <p>
+                                        <!-- Text -->
+						<section>
+							
+							
+
+							<hr />
+
+							
+					
+					
+					
+						
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+        <footer id="footer">
+           
+                   
+                </section>
+                <div class="row">
+                    <div class="8u 12u(medium)">
+                        <ul class="copyright">
+                            <li>&copy; 2018. All rights reserved.</li>
+                         
+                       
+                        </ul>
+                    </div>
+                    <div class="4u 12u(medium)">
+                        <ul class="icons">
+                            <li>
+                                <a href="http://www.facebook.com" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitter.com" class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.gmail.com" class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+                            </li>
+                          
+                              
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
