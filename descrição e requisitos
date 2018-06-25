@@ -1,5 +1,5 @@
 *Qual vai ser meu site?
-R: Vai ser um site em que pessoas vão podem doar ou adotar animais.
+R: Vai ser um site em que pessoas vão poder doar ou adotar animais.
 
 *Descrição: o site vai ser feito para evitar que animais fiquem nas ruas, que sejam mortos por algum acidente, que sejam maltratados e etc.
 
@@ -10,6 +10,8 @@ R: Vai ser um site em que pessoas vão podem doar ou adotar animais.
   -Funcionais: o usúario poderá se cadastrar;
                "    "       "   adotar animais;
                "    "       "   doar animais;
+               "    "       "   ver animais que mais estão sendo adotados;
+               "    "       "   acessar loja de roupas;
                
   -Não-Funcionais: o usuário não vai ter acesso ao modo de segurança que o site utiliza;
                    o site poderá ser acessado tanto pelo PC quanto pelo celular;
