@@ -1,1 +1,0 @@
-<copyfiles files="${file.reference.postgresql-9.4-1202.jdbc4.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
