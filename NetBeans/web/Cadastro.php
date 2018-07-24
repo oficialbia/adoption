@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Cadastro</title>
@@ -30,7 +30,7 @@
                 </ul>
             </nav>
         </header>
-        <form method="post" action="Cadastro">
+        <form method="post" action="cadastroserver.php">
             <!-- Main -->
             <section id="main" class="wrapper">
                 <div class="container">
