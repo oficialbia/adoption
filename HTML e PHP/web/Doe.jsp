@@ -21,12 +21,12 @@
 
         <!-- Header -->
         <header id="header">
-            <h1><a href="Home.jsp">Adoption</a></h1>
+            <h1><a href="Home.html">Adoption</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home.jsp">Início</a></li>
-                    <li><a href="Sobre.jsp">Sobre nós</a></li>
-                    <li><a href="Login.jsp" class="button special">Login</a></li>
+                    <li><a href="Home.html">Início</a></li>
+                    <li><a href="Sobre.html">Sobre nós</a></li>
+                    <li><a href="Login.html" class="button special">Login</a></li>
                 </ul>
             </nav>
         </header>
