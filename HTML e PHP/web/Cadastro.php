@@ -21,7 +21,7 @@
 
         <!-- Header -->
         <header id="header">
-            <h1><a href="Home.jsp">Adoption</a></h1>
+            <h1><a href="Home.html">Adoption</a></h1>
             <nav id="nav">
                 <ul>
                     <li><a href="Home.jsp">Início</a></li>
