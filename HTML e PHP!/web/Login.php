@@ -1,3 +1,7 @@
+<?php
+include("LoginServer.php");
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,14 +45,14 @@
 
                 <!-- Text -->
                 <section>
-                    <form method="post" action="Login">
+                    <form action="LoginServer.php" method="post">
                         <div class="row uniform 50%">
                             <table>
                                 <tr>
-                                    <td><input type="text" id="email" placeholder="Email" /></td>
+                                    <td><input type="text" id="email" name="email" placeholder="Email" /></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" id="senha" placeholder="Senha" /></td>
+                                    <td><input type="password" id="senha" name="senha" placeholder="Senha" /></td>
                                 </tr>
                             </table>
                             <div class="row">
