@@ -1,8 +1,12 @@
+<?php
+include("LoginServer.php");
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <title>Adoption - Login</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -41,14 +45,14 @@
 
                 <!-- Text -->
                 <section>
-                    <form method="post" action="Login">
+                    <form action="LoginServer.php" method="post">
                         <div class="row uniform 50%">
                             <table>
                                 <tr>
-                                    <td><input type="text" id="email" placeholder="Email" /></td>
+                                    <td><input type="text" id="email" name="email" placeholder="Email" /></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" id="senha" placeholder="Senha" /></td>
+                                    <td><input type="password" id="senha" name="senha" placeholder="Senha" /></td>
                                 </tr>
                             </table>
                             <div class="row">
