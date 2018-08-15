@@ -25,7 +25,7 @@
 		return true;
 	}
 
-	function cadastrar($nome, $senha, $email, $nome, $sobrenome) {
+	function cadastrar($senha, $email, $nome, $sobrenome) {
 		$config = new Config();
 		$conexao = $config->conectaBanco();
 
