@@ -1,0 +1,21 @@
+body{
+	
+}
+.Img_e_titulo p{
+	color: gray;
+}
+.Img_e_titulo img{
+	border: 1.4px solid #FF0080;
+}
+.texto{
+	position: relative;
+	float: right;
+	bottom: 150px;
+	width: 800px;
+}
+.Fileiras{
+	margin-top: 30px;
+}
+p{
+	color: #FF0080;
+}
