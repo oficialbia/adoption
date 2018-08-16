@@ -21,12 +21,12 @@
 
         <!-- Header -->
         <header id="header">
-            <h1><a href="Home.jsp">Adoption</a></h1>
+            <h1><a href="Home.html">Adoption</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home.jsp">Início</a></li>
-                    <li><a href="Sobre.jsp">Sobre nós</a></li>
-                    <li><a href="Login.jsp" class="button special">Login</a></li>
+                    <li><a href="Home.html">Início</a></li>
+                    <li><a href="Sobre.html">Sobre nós</a></li>
+                    <li><a href="Login.html" class="button special">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,38 +44,38 @@
                                 <tr>
                                     <td>
                                         <!--<input type="text" id="nome" placeholder="Nome" />-->
-                                        <h5>Nome:</h5>
-                                        <input type="text" name="nome" value="" />
+                                        <h5>Tipo de animal:</h5>
+                                        <input type="text" name="tipo" value="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>                                      <h5>Cpf:</h5>
+                                    <td><h5>Raça:</h5>
 
-                                        <input type="text" name="cpf" value="" />
+                                        <input type="text" name="raca" value="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>                                      <h5>Telefone:</h5>
+                                    <td><h5>Idade:</h5>
 
-                                        <input type="text" name="telefone" value="" />
+                                        <input type="text" name="idade" value="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>                                      <h5>Endereço:</h5>
+                                    <td><h5>Porte:</h5>
 
-                                        <input type="text" name="endereco" value="" />
+                                        <input type="text" name="porte" value="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>                                      <h5>Email:</h5>
+                                    <td><h5>Cidade:</h5>
 
-                                        <input type="text" name="email" value="" />
+                                        <input type="text" name="cidade" value="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>                                      <h5>Senha:</h5>
+                                    <td><h5>Gênero:</h5>
 
-                                        <input type="password" name="senha" value="" />
+                                        <input type="text" name="genero" value="" />
                                     </td>
                                 </tr>
                             </table>
