@@ -14,7 +14,7 @@
 		else {
 			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
 						<h3><a href="../index.html">Tentar Novamente</a></h3>';
-			echo $message;
+			echo " Erro";
 		}
 	}
 	else {
@@ -40,8 +40,8 @@
 			$_SESSION['user']['email'] = $email;
 			header("Location: inicial.php");
 		}	else {
-			$message = '<h1>Erro ao cadastrar o usuário.</h1>
-						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
+			$message = '<h1>Usuário não cadastrado.</h1>
+						<h3>Por favor <a href="../index.html">Tente Novamente</a></h3>';
 			echo $message;
 		}
 	}
