@@ -1,7 +1,6 @@
 <?php
 	require_once("config.php");
 
-
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
 
 		if(checkValues($_POST['user'], $_POST['senha'])
@@ -14,7 +13,7 @@
 			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
 						<h3><a href="../index.html">Tentar Novamente</a></h3>'; 
 						
-			echo $message;
+			echo "Erro";
 		}
 	} else {
 		header("Location: ../index.html");
@@ -22,7 +21,7 @@
 
 	function checkValues($nome, $senha) { 
 		if( isset($nome) && !empty($nome) && isset($senha) && !empty($senha) ){
-			$R = true;  de acordo com o valor que você coloca. Por isso, check values vai funcionar como uma função com retorno boolean
+			$R = true; boolean
 		}
 		else {
 			$R = false; 
@@ -47,7 +46,7 @@
 		} else {
 			$message = '<h1>Senha ou nome Incorretos.</h1>
 						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
-						echo $message;
+						echo "Erro";
 						
 
 		}
