@@ -44,7 +44,7 @@
 			
 
 		} else {
-			$message = '<h1>Senha ou nome Incorretos.</h1>
+			$message = '<h1>Senha ou username incorretos!.</h1>
 						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
 						echo "Erro";
 						
