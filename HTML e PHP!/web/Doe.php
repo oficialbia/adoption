@@ -43,55 +43,66 @@
             </div>
         </section>
 
-         <div class="doe">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <!--<input type="text" id="nome" placeholder="Nome" />-->
-                                        <h5>Nome:</h5>
-                                        <input type="text" name="nome" value="" />
-                                    </td>
-                                    <tr>
-                                    <td>                                      <h5>Tipo do animal:</h5>
+         
+        <form method="post" action="Doando.php">
+         	<div class="doe">
+                <table>
+                    <tr>
+	                    <td>
+		                    <h5>Nome:</h5>
+		                    <input type="text" name="nome" value="" />
+	                    </td>
+	                </tr>
 
-                                        <input type="text" name="tipo" value="" />
-                                    </td>
-                                </tr>
-                                </tr>
-                                <tr>
-                                    <td>                                      <h5>Raça:</h5>
+                    <tr>
+	                    <td>
+		                    <h5>Tipo do animal:</h5>
+							<input type="text" name="tipoanimal" value="" />
+	                    </td>
+                    </tr>
 
-                                        <input type="text" name="raça" value="" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>                                      <h5>Idade:</h5>
+                    <tr>
+	                    <td>
+		                    <h5>Raça:</h5>
+							<input type="text" name="raca" value=""/>
+	                    </td>
+                    </tr>
 
-                                        <input type="text" name="idade" value="" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>                                      <h5>Cor:</h5>
+                    <tr>
+	                    <td>
+	                    	<h5>Idade:</h5>
+	                    	<input type="text" name="idade" value="" />
+	                    </td>
+                    </tr>
 
-                                        <input type="text" name="cor" value="" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>                                      <h5>Email do dono:</h5>
+                    <tr>
+	                    <td>
+		                    <h5>Cor:</h5>
+							<input type="text" name="cor" value="" />
+	                    </td>
+                    </tr>
 
-                                        <input type="text" name="email do dono" value="" />
-                                    </td>
-                                </tr>
-				<tr>
-					<td><h5>Descrição do animal:</h5>
-					<textarea cols="40"></textarea>
-				</td>
-				</tr>
-                            </table>
-                            <br />
-                            <div class="row">
-                                <input type="submit" value="Cadastrar" name="Cadastrar" /> 
-                            </div> 
+                    <tr>
+	                    <td>
+		                    <h5>Email do dono:</h5>
+							<input type="text" name="emaildono" value="" />
+	                    </td>
+                    </tr>
+
+					<tr>
+						<td>
+							<h5>Descrição do animal:</h5>
+							<textarea name="descricao" cols="40"></textarea>
+						</td>
+					</tr>
+                </table>
+                
+                <br />
+                <div class="row">
+                    <input type="submit" value="Cadastrar" name="Cadastrar" /> 
+                </div>
+            </div> 
+        </form>
         <!-- Footer -->
         <footer id="footer">
 
