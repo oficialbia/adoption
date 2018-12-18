@@ -100,6 +100,7 @@
                 <br />
                 <div class="row">
                     <input type="submit" value="Cadastrar" name="Cadastrar" /> 
+                    <input type="reset" value="Limpar" name="Limpar" /> 
                 </div>
             </div> 
         </form>
