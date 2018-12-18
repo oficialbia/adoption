@@ -29,8 +29,10 @@
 		echo 'Animal não cadastrado';
 	}
 	else 
-	{ 
-		header("Location: Home.html");
+	{
+		echo 'Animal cadastrado'; 
+		echo "adjkabgdahd";
+		header("Location: Páginas.html");
 	}
 	
 ?>
