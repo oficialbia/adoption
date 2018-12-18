@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
--- https://www.phpmyadmin.net/
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: 14-Jun-2018 às 01:20
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Host: localhost
+-- Tempo de geração: 18/12/2018 às 14:58
+-- Versão do servidor: 5.7.18-0ubuntu0.16.04.1
+-- Versão do PHP: 7.0.18-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `adoption`
+-- Banco de dados: `adoption`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `doar`
+-- Estrutura para tabela `doar`
 --
 
 CREATE TABLE `doar` (
@@ -41,7 +39,35 @@ CREATE TABLE `doar` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `midia`
+-- Estrutura para tabela `empresas`
+--
+
+CREATE TABLE `empresas` (
+  `NomeEmpresa` varchar(200) NOT NULL,
+  `cnpj` int(50) NOT NULL,
+  `endereco` varchar(200) NOT NULL,
+  `cidade` varchar(100) NOT NULL,
+  `sevico` varchar(100) NOT NULL,
+  `dono` varchar(100) NOT NULL,
+  `cod_empresa` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Fazendo dump de dados para tabela `empresas`
+--
+
+INSERT INTO `empresas` (`NomeEmpresa`, `cnpj`, `endereco`, `cidade`, `sevico`, `dono`, `cod_empresa`) VALUES
+('Adoption', 312313113, 'jose alguma coisa', 'quissama', 'lavagem', 'beatriz', 1),
+('dadadasdada', 13131334, 'josÃ© saturnino', 'quisasa', 'adadqeq', 'eu', 2),
+('Netflix', 31231312, 'josÃ© saturnino', 'Rio de Janeiro', 'entretenimento', 'alguem', 3),
+('adoption', 51210, 'josÃ© saturnino', 'quissamÃ£', 'raÃ§Ã£o', 'bia', 4),
+('adoption', 12345678, 'josÃ© saturnino', 'quissamÃ£', 'matar', 'nos', 5),
+('adoption', 12345678, 'josÃ© saturnino', 'quissamÃ£', 'matar', 'nos', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `midia`
 --
 
 CREATE TABLE `midia` (
@@ -55,7 +81,7 @@ CREATE TABLE `midia` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura para tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -74,78 +100,57 @@ CREATE TABLE `usuario` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `usuario`
---
-
-INSERT INTO `usuario` (`senha`, `email`, `foto`, `data_nascimento`, `username`, `cod_usuario`, `nome`, `sobrenome`, `pais`, `estado`, `cidade`, `bairro`) VALUES
-('123', 'cleitonbraga56@gmail.com', NULL, NULL, 'ThePunisher', 1, 'Cleiton', 'Braga', NULL, NULL, NULL, NULL),
-('agnes', 'minions1001@gmail.com', NULL, NULL, 'MinionsEscravos', 2, 'Meu', 'Malvado', NULL, NULL, NULL, NULL),
-('24', 'Sei lá', NULL, NULL, '23gu1381uv7', 3, 'Teste4', 'adhgajda', NULL, NULL, NULL, NULL),
-('dadadad', 'dadadada', NULL, NULL, 'dadad', 4, 'adad', 'adadaadada', NULL, NULL, NULL, NULL),
-('deusnopoder', 'PapaiMeLivre@gmail.com', NULL, NULL, 'Papai_É_Deus', 5, 'Jesus', 'Braga', NULL, NULL, NULL, NULL),
-('1e123124asdfa', 'adaadadadad', NULL, NULL, 'd12bd18dg', 6, '1t78231g', 'adadbaida', NULL, NULL, NULL, NULL),
-('adadasdad', 'dadaddaada', NULL, NULL, 'adasdada', 7, 'adad', 'adad', NULL, NULL, NULL, NULL),
-('mg211126', 'Mateusgv21@gmail.com', NULL, NULL, 'Teuus', 8, 'Mateus', 'Goncalves', NULL, NULL, NULL, NULL),
-('1234', '84e7urfo9çtg90y-9&#7765;', NULL, NULL, 'PapaiMeLivre', 9, 'Jesus', 'Deus', NULL, NULL, NULL, NULL),
-('1234', 'aadaandasud', NULL, NULL, 'atelogo', 10, 'oi', 'tchau', NULL, NULL, NULL, NULL),
-('1234', 'jkabsdka', NULL, NULL, 'atelogo', 11, 'oi', 'tchau', NULL, NULL, NULL, NULL),
-('123123', 'cleitonbraga56@gmail.com', NULL, NULL, 'eaimano', 12, 'oi', 'tchau', NULL, NULL, NULL, NULL),
-('narquitos', 'narcos762@gmail.com', NULL, NULL, 'LoChief', 13, 'Pablo ', 'Escobar', NULL, NULL, NULL, NULL),
-('1213123', 'asdadadada', NULL, NULL, 'NuncaNemVi', 14, 'Não', 'Sei', NULL, NULL, NULL, NULL),
-('123', 'Mateusgv21@gmail.com', NULL, NULL, 'ThePunisher', 25, 'Mateus', 'tchau', NULL, NULL, NULL, NULL),
-('mg211126', 'Mateusgv21@gmail.com', NULL, NULL, 'Teuus', 26, 'Mateus', 'Goncalves', NULL, 'rj', 'quissama', NULL),
-('mg211126', 'Mateusgv21@gmail.com', NULL, NULL, 'Teuus_goncalves', 27, 'Mateus', 'Goncalves', NULL, 'rj', 'quissama', NULL),
-('mg211126', 'Mateusgv21@gmail.com', NULL, NULL, 'Teuus', 28, 'Mateus', 'Goncalves', NULL, 'rj', 'quissama', NULL),
-('123', 'minions1001@gmail.com', NULL, NULL, 'atelogo', 29, 'Jesus', 'Gonçalves', NULL, 'ce', 'fortaleza', NULL),
-('mg211126', 'Mateusgv21@gmail.com', NULL, NULL, 'Teuus', 30, 'Mateus', 'Goncalves', NULL, 'rj', 'quissama', NULL),
-('1234', 'gameplayvs@gmail.com', NULL, NULL, 'GameplaysVS', 31, 'Vitor', 'Silva', NULL, '...', '', NULL),
-('123', 'cleitinhobraga11@gmail.com', NULL, NULL, 'Papai', 32, 'Jose', 'Antonio', NULL, '...', '', NULL);
-
---
--- Indexes for dumped tables
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `doar`
+-- Índices de tabela `doar`
 --
 ALTER TABLE `doar`
   ADD KEY `idanimal` (`idanimal`);
 
 --
--- Indexes for table `midia`
+-- Índices de tabela `empresas`
+--
+ALTER TABLE `empresas`
+  ADD PRIMARY KEY (`cod_empresa`);
+
+--
+-- Índices de tabela `midia`
 --
 ALTER TABLE `midia`
   ADD PRIMARY KEY (`cod_midia`);
 
 --
--- Indexes for table `usuario`
+-- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`cod_usuario`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT for table `doar`
+-- AUTO_INCREMENT de tabela `doar`
 --
 ALTER TABLE `doar`
   MODIFY `idanimal` int(11) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT for table `midia`
+-- AUTO_INCREMENT de tabela `empresas`
+--
+ALTER TABLE `empresas`
+  MODIFY `cod_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT de tabela `midia`
 --
 ALTER TABLE `midia`
   MODIFY `cod_midia` int(11) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `cod_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

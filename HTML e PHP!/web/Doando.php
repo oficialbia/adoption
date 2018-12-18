@@ -31,6 +31,8 @@
 	else 
 	{
 		echo 'Animal cadastrado'; 
+		echo "adjkabgdahd";
+		header("Location: Páginas.html");
 	}
 	
 ?>

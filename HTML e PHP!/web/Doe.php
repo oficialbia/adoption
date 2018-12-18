@@ -24,7 +24,6 @@
                 <ul>
                     <li><a href="Home.html">Início</a></li>
                     <li><a href="Sobre.html">Sobre nós</a></li>
-                    <li><a href="Login.php" class="button special">Login</a></li>
                      <li><a href="Loja.html" class="button special">Loja</a></li>
                     <li><a href="Empresas.html" class="button special">Empresas</a></li>
                     <li><a href="Perfil.html" class="button special">Perfil</a></li>
@@ -100,6 +99,7 @@
                 <br />
                 <div class="row">
                     <input type="submit" value="Cadastrar" name="Cadastrar" /> 
+                    <input type="reset" value="Limpar" name="Limpar" />
                 </div>
             </div> 
         </form>
